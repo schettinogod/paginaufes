@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+}
+.header {
+    background-color:rgb(255, 246, 255) ;
+    padding: 5px;
+    text-align: center;	
+	margin: 0px 35px;
+}
+.header h1 {
+    color:rgb(121, 32, 0);
+	font-family: verdana;
+    font-size: 55px;
+}
+
+.header h3 {
+    font-family: verdana;
+    font-size: 20px;
+}
+.tophomenav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+	margin: 0px 35px;
+	font-size: 20px;
+	font-family: verdana;
+}
+.tophomenav a:hover {
+    background-color:rgb(255, 255, 255);
+    color: black;
+	font-family: verdana;
+	font-size: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+	margin: 0px 35px;
+	font-family: verdana;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.column {
+    float: left;
+    padding: 10px;
+	margin:0px 30px
+	
+}
+
+
+.column.side {
+    width: 20%;
+	background-color:rgb(208, 255, 255);
+}
+
+
+.column.middle {
+    width: 45%;
+	background-color:rgb(234, 255, 255);
+
+)
+
+
+}
+
+
+.row:after {
+ 
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+	
+.footer {
+    background-color:rgb(52, 2, 5);
+    padding: 70px;
+    text-align: right-side;
+}
+.footer h1{
+	color:white;
+	font-family: verdana;
+	
+}
+.footer h3{
+	font-family: verdana;
+	color:rgb(253, 251, 241);
+}
+.footer a{
+	font-family: verdana;
+	font-size: 20px;
+	color:rgb(253, 251, 241);
+}
+h2 {
+	color:white;
+		font-family:verdana;
+		font-size:18px;
+}	
+label{
+    color:white;
+}	
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Departamento de Computação   DCOMP
+Centro de Ciências Exatas, Naturais e da Saúde – CCENS-TI BR-ES</h1>
+  <button><a " ><img src="logoufes.gif" border="0" /></a></button>
+  <h3>Universidade Federal do Espírito Santo</h3>
+  
+  
+</div>
+<div class="tophomenav">
+    <a href="1.html">Home</a>
+    <a href="#" onclick="alert('VISÃO GERAL DA UFES campi: Alegre, São Matheus, Goiabeiras, e Maruípe,com 19 mil estudantes matriculados na graduação ao total,')"> Graduação</a>
+    <a href="3.html" onclick="alert('ALEGRE-ES   Nº vagas: 40/ano   Entrada: Anual    Titulação: Bacharelado em Ciência da Computação    Duração: 8 semestres  PRESENCIAL')"> Ciência da Computação</a>
+    <a href="4.html" onclick="alert('ALEGRE-ES   Nº vagas: 70/ano   Entrada: anual    Titulação: Bacharelado em Sistemas de Informação    Duração: 9 semestres  PRESENCIAL')"> Sistemas de Informação</a>
+    <a href="2.html"> Fale Conosco</a>
+   
+    <a href="5.html"> Disciplinas</a>
+    <a href="#"></a>
+    
+      <input type="text" name="nome" placeholder="Pesquise no site"><br><br>
+  </div>
+  
+<br><br><br><br><br><br>
+<div style="background-color:white">
+<h1 style="border:3px solid white;">Fale conosco </h1>
+</div>
+<form method="POST" action="contact">
+	
+	<label>Nome:</label>
+	<input type="text" name="nome" placeholder="Digite seu Nome"><br><br>
+	<label>E-mail:</label>
+	<input type="email" name="email" placeholder="Digite seu E-mail"><br><br>
+	<label>Endereço:</label>
+	<input type="text" name="endereço" placeholder="Digite seu endereço"><br><br>
+	<label>Cidade:</label>
+	<input type="text" name="cidade" placeholder="Digite seu Estado"><br><br>
+	<label>CEP:</label>
+	<input type="text" name="cep" placeholder="Digite seu CEP"><br><br>
+	<label>Telefone:</label>
+	<input type="text" name="telefone" placeholder="(XXX)9XXXX-XXXX"><br><br>
+	<label>Sexo:</label>
+	<input type="text" name="sexo" placeholder="Digite seu sexo"><br><br>
+	<label>Mensagem para o DCOMP:</label>
+	<textarea name="mensagem" rows="20" cols="75"></textarea> <br><br>
+	<input type="button" value="Enviar" onClick="alert('Mensagem enviada');return true"><br><br>
+	
+	<img src="wallpaper.jpg" style="width:50%;">
+	
+	
+
+	<br>
+
+<div class="footer">
+  <h1>Contato DCOMP</h1>
+  <br>
+  <h3>Local: Universidade Federal do Espírito Santo. Todos os direitos reservados.
+Alto Universitário, s/nº - Guararema, Alegre -20.7623111996, -41.535909527</h3>
+  <h3>Alegre - ES | CEP 29500-000.</h3>
+  <h3>e-mail: dcomp.ufes@gmail.com</h3>
+  <h3> TEL Secretaria do DCOMP +55 (28) 3552-8953</h3>
+  <h3>© 2018 Learning. All Rights Reserved |Site Desenvolvido by Gnomo</h3>
+  <a href="https://www.facebook.com/vincenzo.emanuel.7">Facebook do Desenvolvedor<a>   <br>        <a href="http://www.ufes.br/">Site da UFES<a>                             <br>      <a href="https://aluno.ufes.br/index.jsp">Site Oficial do Portal do Aluno<a>          <br><a href="http://www.computacao.alegre.ufes.br/">Site Oficial do Departamento de Computação de ALEGRE-ES<a>
+	<br><br>
+  </div>
+
+
+
+</body>
+</html>

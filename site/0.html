@@ -1,0 +1,117 @@
+fotoprofessores.png<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<style>
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	right: 0;
+   
+}
+
+.conte {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 26px;
+	text-align: justify;
+	}
+#myBtc{
+	
+    border: none;
+    background: #000;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+	color: #ddd;
+    cursor: pointer;
+}
+#myBtc:hover {
+    background: #fff;
+    color: white;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="MarsHelicopterTechnologyDemonstration_May2018_v002-1280.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="conte">
+  
+  <p>The Mars Helicopter is a technology demonstration Credits: NASA/JPL-Caltech</p>
+    <p>“O recorde de altitude de um helicóptero voando aqui na Terra é de cerca de 40.000 pés. A atmosfera de Marte é apenas um por cento da da Terra, então quando o nosso helicóptero está na superfície marciana, já está no equivalente a 100.000 pés de altitude ”, disse Mimi Aung, gerente de projeto da Mars Helicopter no JPL.<br> “Para fazê-lo voar com essa baixa densidade atmosférica, tivemos que examinar tudo, torná-lo o mais leve possível, sendo tão forte e tão poderoso quanto possível”.<br>
+
+Uma vez que o rover esteja na superfície do planeta, um local adequado será encontrado para desdobrar o helicóptero do veículo e colocá-lo no chão.<br>	 O rover será então afastado do helicóptero para uma distância segura da qual ele transmitirá comandos. Depois que suas baterias são carregadas e uma miríade de testes é realizada, os controladores na Terra comandarão o helicóptero Mars para fazer seu primeiro vôo autônomo na história.
+
+
+<a href="https://www.nasa.gov/mars">Mars2020<a>
+
+</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button><button id="myBtc">RETIRA O ESCRITO</button>
+<button><a href="1.html">back</button></a>
+  </div>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pausar";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
